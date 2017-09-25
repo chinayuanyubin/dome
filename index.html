@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font: normal 100% Helvetica, Arial, sans-serif;
+			}
+			
+			.wrap {
+				width: 100%;
+				min-height: 100vh;
+				background: #ccc;
+				position: relative; 
+			}
+			.content{
+				width: 80%;
+				height: 100vh;
+				background: pink;
+				font-size: 1em;
+				margin: 0 auto;
+			}
+			.zh1{
+				float: left;
+				width: 50%;
+				height: 400px;
+				background: skyblue;
+				position: relative;
+			}
+			.zh1 .zh{
+				width: 20%;
+				height: 80px;
+				background: salmon;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform:translate(-50%,-50%);             
+				-webkit-transform:translate(-50%,-50%);             
+				-moz-transform:translate(-50%,-50%); 
+			}
+			.zh2{
+				float: left;
+				width: 50%;
+				height: 400px;
+				background: sandybrown;
+				position: relative;
+				line-height: 400px;
+				text-align: center;
+			}
+			.zh2 .zh{
+				width: 20%;
+				height: 80px;
+				background: silver;
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 80px;
+			}
+			.d{
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 20px;
+			}
+			.zh3{
+				float: left;
+				width: 50%;
+				height: 400px;
+				background: sandybrown;
+				position: relative;
+				text-align: center;
+			}
+			.zh3 .zh{
+				width: 20%;
+				height: 80px;
+				background: silver;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				
+			}
+			
+    div.outer {
+        width: 300px;
+        height: 200px;
+        background: lightgray;
+        display: table;
+    }
+    div.inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+		</style>
+		<style>
+#demo {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  position: relative;
+  border: 4px solid #333;
+}
+
+#demo:after, #demo:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  left: 100%;
+  position: absolute;
+  width: 0;
+}
+
+#demo:after {
+  border-width: 9px;
+  border-left-color: #ccc;
+  top: 15px;
+}
+
+#demo:before {
+  border-width: 14px;
+  border-left-color: #333;
+  top: 10px;
+}
+</style>
+	</head>
+
+	<body>
+		
+		<div class="wrap">
+			<div class="content">
+				<div class="zh1">
+					<div class="zh">
+						1111
+					</div>
+				</div>
+				<div class="zh2">
+					<div class="zh">
+						<div class="d">
+						拉德看来饭卡就倒萨发卡量倒萨解开了
+						</div>
+					</div>
+				</div>
+				<div class="zh3">
+					<div class="zh">
+						1111
+					</div>
+				</div>
+				<div class="outer">
+    			<div class="inner">这段文字将垂直居中，无论这段文字是多行还是单行，他都能完美的显示在块级元素中间。</div>
+				</div>
+			</div>
+			<div id="demo"></div>
+
+
+		</div>
+	</body>
+
+</html>
